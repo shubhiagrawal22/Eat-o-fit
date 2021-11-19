@@ -1,3 +1,5 @@
+
+
 *
 {
     padding: 0;
@@ -9,28 +11,67 @@
 {
    min-height: 100vh;
 }
- 
-header {
-    background-color: white;
-    justify-content: center;
-    align-items: center;
-    height: 100px;
-    width: 100%;
-    margin-top: 10px;
+
+header li,a,button {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: black;
+    text-decoration: none;
+  }
+header
+{
     display: flex;
-  }
-  header h1 {
-    font-size: 60px;
-    color: grey;
-    text-align: center;
-  }
-  .container1
-  {
-      display: flex;
-      min-height: 90vh;
-      justify-content: flex-end;
-      align-items: flex-end;
-  }
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
+    height: 10vh;
+    margin-top: 5px;
+}
+.logo
+{
+    cursor: pointer;
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+}
+.nav
+{
+    list-style: none;
+}
+.nav li
+{
+    display: inline-block;
+    padding: 0px 20px;
+}
+.nav li a
+{
+    transition: all 0.3s ease 0s;
+}
+.nav li a:hover
+{
+    color: #3586ff;
+}
+button
+{
+    padding: 9px 25px;
+    background-color: rgba(68, 148, 253,1);
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    border-radius: 25px;
+}
+button:hover
+{
+    background-color: rgba(68, 148, 253,0.8);
+}
+
+.container1
+{
+    display: flex;
+    min-height: 90vh;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
 footer
 {
     position: relative;

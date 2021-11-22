@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weight Loss DietAria- Eat-o-Fit</title>
+    <link rel="stylesheet" href="../meallcss/weightloss.css">
+</head>
+
+<body>
+    <div class="header"></div>
+    <div class="container">
+        <div class="site-title">
+
+            <h1>Weight Loss Meal Plan</h1>
+
+        </div>
+        <div class="overlay"></div>
+
+        <div class="box2"></div>
+        <div class="menu-box">
+
+            <div class="img-box">
+                <h6>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste.</h6>
+                <div class="slideshow-container">
+
+                    <div class="mySlides fade">
+                      <!-- <div class="numbertext">1 / 3</div> -->
+                      <img src="../assets/meal2.jpg" style="width:100%">
+                      <!-- <div class="text">Caption Text</div> -->
+                    </div>
+                    
+                    <div class="mySlides fade">
+                      <!-- <div class="numbertext">2 / 3</div> -->
+                      <img src="../assets/meal3.jpg" style="width:100%">
+                      <!-- <div class="text">Caption Two</div> -->
+                    </div>
+                    
+                    <div class="mySlides fade">
+                      <!-- <div class="numbertext">3 / 3</div> -->
+                      <img src="../assets/meal6.jpg" style="width:100%">
+                      <!-- <div class="text">Caption Three</div> -->
+                    </div>
+                    
+                    </div>
+                    <br>
+                    
+                    <div style="text-align:center">
+                      <span class="dot"></span> 
+                      <span class="dot"></span> 
+                      <span class="dot"></span> 
+                    </div>
+                    
+                    <script>
+                    var slideIndex = 0;
+                    showSlides();
+                    
+                    function showSlides() {
+                      var i;
+                      var slides = document.getElementsByClassName("mySlides");
+                      var dots = document.getElementsByClassName("dot");
+                      for (i = 0; i < slides.length; i++) {
+                        slides[i].style.display = "none";  
+                      }
+                      slideIndex++;
+                      if (slideIndex > slides.length) {slideIndex = 1}    
+                      for (i = 0; i < dots.length; i++) {
+                        dots[i].className = dots[i].className.replace(" active", "");
+                      }
+                      slides[slideIndex-1].style.display = "block";  
+                      dots[slideIndex-1].className += " active";
+                      setTimeout(showSlides, 2000); // Change image every 2 seconds
+                    }
+                    </script>
+                    
+                <!-- <img src="../mealimage/balanced_meal.jpg" alt=""> -->
+            </div>
+            <div class="text-box">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit, eius fugit? Obcaecati
+                    quaerat sed inventore quod aliquid minima veniam veritatis distinctio tenetur provident animi
+                    commodi natus culpa, iure libero voluptatum consectetur non officia dolorum deleniti ratione!
+                    Architecto corrupti quidem fuga, earum dicta cumque consequuntur dolor. Dicta illo cum doloremque
+                    quo.</p>
+                    <p>l
+                    </p>
+            </div>
+        </div>
+        <div class="comment"></div>
+    </div>
+</body>
+
+</html>

@@ -490,6 +490,51 @@ nav{
     text-decoration: none;
   }
 
+.section5
+{
+    height: 50vh;
+    width: 100%;
+    background-image: url("./assets/main4.png");
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-size: cover;
+    background: no-repeat scroll center scroll;
+    background-attachment: fixed;
+    
+    
+}
+.section5 h1
+{
+    font-size: 100px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: white;
+}
+.week
+{
+    border-radius: 35px;
+    background-color: #5486ff;
+    padding: 15px;
+    color: white;
+    font-family: 'Montserrat';
+    font-size: 18px;
+    font-weight: 700;
+}
+/* .section5::before
+{
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: black;
+    background-attachment: fixed;
+    opacity: 0.6;
+} */
 footer
 {
     position: relative;

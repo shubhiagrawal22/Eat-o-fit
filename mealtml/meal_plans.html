@@ -11,9 +11,15 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script> -->
-    
+
   <link rel="stylesheet" href="../meallcss/weightloss.css">
   <link rel="stylesheet" href="/style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"  crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="./style.css"> -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
 </head>
 
 <body>
@@ -32,6 +38,23 @@
     
 </header>
     </div> -->
+    <!-- <nav>
+  <div class="logo">
+    <img src="./assets/Eat-o-Fit-logo.jpeg" alt="">
+     <h1>Eat-o-fit</h1>
+  </div>
+  <input type="checkbox" id="click">
+  <label for="click" class="menu-btn">
+  <i class="fas fa-bars"></i>
+  </label>
+  <ul>
+     <li><a href="#">Home</a></li>
+     <li><a href="#">About</a></li>
+     <li><a href="#">Services</a></li>
+     <li><a href="#">Meal Plans</a></li>
+     <li><a href="#">Contact Us</a></li>
+  </ul>
+</nav> -->
   <div class="main">
     <div class="site-title">
 
@@ -42,6 +65,19 @@
 
 
     <div class="menu-box">
+      <div class="text-box">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit, eius fugit? Obcaecati
+          quaerat sed inventore quod aliquid minima veniam veritatis distinctio tenetur provident animi
+          commodi natus culpa, iure libero voluptatum consectetur non officia dolorum deleniti ratione!
+          Architecto corrupti quidem fuga, earum dicta cumque consequuntur dolor. Dicta illo cum doloremque
+          quo.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, in minus. Quasi, cupiditate et! Nihil
+          blanditiis culpa delectus eaque unde.</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque nemo quod veniam sapiente beatae architecto
+          omnis molestiae tempore magni porro illum eum animi, qui rerum ex inventore eligendi nostrum minima vel sequi
+          vitae placeat natus ratione voluptates. Ut, quibusdam error?</p>
+        <button><b>View Menu</b></button>
+      </div>
 
       <div class="img-box">
         <p>Lorem ipsum dolor sit amet.</p>
@@ -98,17 +134,14 @@
 
         <!-- <img src="../mealimage/balanced_meal.jpg" alt=""> -->
       </div>
-      <div class="text-box">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit, eius fugit? Obcaecati
-          quaerat sed inventore quod aliquid minima veniam veritatis distinctio tenetur provident animi
-          commodi natus culpa, iure libero voluptatum consectetur non officia dolorum deleniti ratione!
-          Architecto corrupti quidem fuga, earum dicta cumque consequuntur dolor. Dicta illo cum doloremque
-          quo.</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, in minus. Quasi, cupiditate et! Nihil
-          blanditiis culpa delectus eaque unde.</p>
-          <button>View Menu</button>
+      <div class="pop-image">
+        <!-- <button><b>View Menu</b></button> -->
+        <span>&times;</span>
+        <img src="../assets/weightlossmenu.jpg" alt="" style="overflow: auto;" >
       </div>
       
+      
+
 
     </div>
 
@@ -160,8 +193,7 @@
           <div class="details">
             <ul>
               <li>lorem</li>
-              <li>ispum/
-              <li>
+              <li>ispum </li>
               <li>dolor</li>
               <li>sit</li>
               <li>adispt</li>
@@ -204,6 +236,17 @@
     </div>
 
   </div>
+  <script>
+    document.querySelectorAll('.menu-box button').forEach(button => {
+      button.onclick = () => {
+        document.querySelector('.pop-image').style.display = 'block';
+      }
+    });
+    document.querySelector('.pop-image span').onclick = () => {
+      document.querySelector('.pop-image').style.display = 'none';
+    }
+
+  </script>
 
 </body>
 

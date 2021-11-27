@@ -106,7 +106,11 @@
           quo.</p>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, in minus. Quasi, cupiditate et! Nihil
           blanditiis culpa delectus eaque unde.</p>
-          <button>View Menu</button>
+          <button><b>View Menu</b></button>
+      </div>
+      <div class="pop-image">
+        <span>&times;</span>
+        <img src="../assets/weightlossmenu.jpg" alt="">
       </div>
       
 
@@ -160,8 +164,7 @@
           <div class="details">
             <ul>
               <li>lorem</li>
-              <li>ispum/
-              <li>
+              <li>ispum </li>
               <li>dolor</li>
               <li>sit</li>
               <li>adispt</li>
@@ -204,6 +207,18 @@
     </div>
 
   </div>
+  <script>
+    document.querySelectorAll('.menu-box button').forEach(button => {
+      button.onclick = () =>
+      {
+      document.querySelector('.pop-image').style.display = 'block';
+      }
+    });
+     document.querySelector('.pop-image span').onclick = () => {
+       document.querySelector('.pop-image').style.display = 'none';
+     }
+
+  </script>
 
 </body>
 

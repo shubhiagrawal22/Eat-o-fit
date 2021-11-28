@@ -5,14 +5,14 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Weight Loss DietAria- Eat-o-Fit</title>
+  <title>Keto Meal Plan- Eat-o-Fit</title>
   <!-- bs4 -->
   <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script> -->
 
-  <link rel="stylesheet" href="../meallcss/weightloss.css">
+  <link rel="stylesheet" href="../meallcss/keto.css">
   <link rel="stylesheet" href="../style.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
     crossorigin="anonymous">
@@ -62,7 +62,7 @@
   <div class="main">
     <div class="site-title">
 
-      <h1>Weight Loss Meal Plan</h1>
+      <h1>Keto Meal Plan</h1>
 
     </div>
     <div class="overlay"></div>
@@ -77,7 +77,7 @@
           quo.</p>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, in minus. Quasi, cupiditate et! Nihil
           blanditiis culpa delectus eaque unde.</p>
-       
+        
         <button><b>View Menu</b></button>
       </div>
 
@@ -87,19 +87,19 @@
 
           <div class="mySlides fade">
             <!-- <div class="numbertext">1 / 3</div> -->
-            <img src="../assets/meal2.jpg" style="width:100%">
+            <img src="../assets/keto1.jpg" style="width:100%">
             <!-- <div class="text">Caption Text</div> -->
           </div>
 
           <div class="mySlides fade">
             <!-- <div class="numbertext">2 / 3</div> -->
-            <img src="../assets/meal3.jpg" style="width:100%">
+            <img src="../assets/keto4.jpg" style="width:100%">
             <!-- <div class="text">Caption Two</div> -->
           </div>
 
           <div class="mySlides fade">
             <!-- <div class="numbertext">3 / 3</div> -->
-            <img src="../assets/meal6.jpg" style="width:100%">
+            <img src="../assets/keto3.jpg" style="width:100%">
             <!-- <div class="text">Caption Three</div> -->
           </div>
 
@@ -139,7 +139,7 @@
       <div class="pop-image">
         <!-- <button><b>View Menu</b></button> -->
         <span>&times;</span>
-        <img src="../assets/weightlossmenu.jpg" alt="" style="overflow: auto;">
+        <img src="../assets/ketodietplan.png" alt="" style="overflow: auto;">
       </div>
 
 
@@ -209,7 +209,7 @@
             <h2>Men</h2>
           </div>
           <div class="details">
-            <ul style="list-style-type: none; display: inline-block; padding: 40px; margin: 5px;font-family: 'Dancing Script', cursive;">
+            <ul style="list-style-type: none; display: inline-block; padding: 40px; margin: 5px;">
               <li><i class="fa fa-check" aria-hidden="true"></i>lorem</li>
               <li><i class="fa fa-check" aria-hidden="true"></i>ispum</li>
               <li><i class="fa fa-check" aria-hidden="true"></i>dolor</li>
@@ -237,13 +237,20 @@
       </div>
     </div>
     <div class="box6">
-    <div class="comment">
-      <p id="quote">Let's take health seriously</p>
-      <h1 id="author">Healthips</h1>
-    </div>
-  </div>
-    <div style="text-align: center; margin-top: 50px; ">
-      <button onclick="generate()" type="button" class="btn btn-info"  style="width: 200px; height: 60px; font-size: 30px; color: #fff; background:lightcoral;">Next health Tip</button>
+        <h1>Keto Gallery</h1>
+        <div class="image-container">
+            <div class="images"><img src="../assets/keto12.jpg" alt=""></div>
+            <div class="images"><img src="../assets/keto10.jpg" alt=""></div>
+            <div class="images"><img src="../assets/keto4.jpg" alt=""></div>
+            <div class="images"><img src="../assets/keto8.jpg" alt=""></div>
+            <div class="images"><img src="../assets/keto9.jpg" alt=""></div>
+            <div class="images"><img src="../assets/keto1.jpg" alt=""></div>
+        </div>
+        <div class="popup-image">
+            <span>&times;</span>
+            <img src="../assets/keto12.jpg" alt="">
+        </div>
+    
     </div>
     <!-- </div> -->
     <div class="container1">
@@ -294,24 +301,18 @@
 
   </script>
   <script>
-    function generate() {
-      var comment = {
-        "Apple": '"Apples are high in fiber, vitamin C, and numerous antioxidant They are very filling and make the perfect snack if you find yourself hungry between meals"',
-        "Avocados" : '"Avocados are different than most fruits because they are loaded with healthy fats instead of carbs. Not only are they creamy and tasty but also high in fiber, potassium, and vitamin C."',
-        "Blueberries": '"Blueberries are not only delicious but also among the most powerful sources of antioxidants in the world"',
-        "Strawberries": '"Strawberries are highly nutritious and low in both carbs and calories.They are loaded with vitamin C, fiber, and manganese and are arguably among the most delicious foods in existence."'
+      document.querySelectorAll('.image-container img').forEach(images => {
+          images.onclick = () =>{
+          document.querySelector('.popup-image').style.display = 'block';
+          document.querySelector('.popup-image img').src = images.getAttribute('src');
+          }
+      });
 
-
+      document.querySelector('.popup-image span').onclick = () =>{
+      document.querySelector('.popup-image').style.display = 'none';
       }
-      var authors = Object.keys(comment);
-      var author = authors[Math.floor(Math.random() * authors.length)]
-      var quote = comment[author];
-
-      document.getElementById("quote").innerHTML = quote;
-      document.getElementById("author").innerHTML = author;
-
-    }
   </script>
+  
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"

@@ -41,11 +41,13 @@
   <i class="fas fa-bars"></i>
   </label>
   <ul>
-     <li><a href="#">Home</a></li>
-     <li><a href="#">About</a></li>
-     <li><a href="#">Services</a></li>
-     <li><a href="#">Meal Plans</a></li>
-     <li><a href="#">Contact Us</a></li>
+     <li><a href="./index.html">Home</a></li>
+     <li><a href="./assets/about-us/about-us.html">About</a></li>
+     <li><a href="./assets/about-us/team.member.html">Our Team</a></li>
+     <li><a href="#meals">Meal Plans</a></li>
+    
+     <li><a href="./signin.html">Register</a></li>
+     <li><a href="./signin.html">Contact Us</a></li>
   </ul>
 </nav>
 <div class="section1">
@@ -64,8 +66,8 @@
           <p>Eat-o-fit is here to provide you diet according to your needs</p>
         
         <div class="slider-btn">
-          <button class="btn btn-1">&nbsp; About Us &nbsp;</button>
-          <button class="btn btn-2">Check Meals</button>
+          <a href="./assets/about-us/about-us.html"><button class="btn btn-1">&nbsp; About Us &nbsp;</button></a>
+          <a href="#meals"><button class="btn btn-2">Check Meals</button></a>
         </div>
         </div>
       </div>
@@ -75,8 +77,8 @@
           <h5>Healthy Eating</h5>
           <p>Say no to diseases just by changing your plate content</p>
           <div class="slider-btn">
-            <button class="btn btn-1">&nbsp; About Us &nbsp;</button>
-            <button class="btn btn-2">Check Meals</button>
+            <a href="./assets/about-us/about-us.html"><button class="btn btn-1">&nbsp; About Us &nbsp;</button></a>
+            <a href="#meals"><button class="btn btn-2">Check Meals</button></a>
           </div>
         </div>
       </div>
@@ -86,8 +88,8 @@
           <h5>Try it Once!!</h5>
           <p>Experience overall changes after trying for some time</p>
           <div class="slider-btn">
-            <button class="btn btn-1">&nbsp; About Us &nbsp;</button>
-            <button class="btn btn-2">Check Meals</button>
+            <a href="./assets/about-us/about-us.html"><button class="btn btn-1">&nbsp; About Us &nbsp;</button></a>
+            <a href="#meals"><button class="btn btn-2">Check Meals</button></a>
           </div>
         </div>
       </div>
@@ -166,30 +168,61 @@
     </div>
 
 </div>
+<a name="meals"></a>
 <div class="section4">
+  
   <div class="container2">
     <h5>Want something healthy?</h5>
     <h1>Check our Meal Plans</h1>
     <ul>
-      <li><a href="#">Weight Loss Meal Plan</a></li>
-      <li><a href="#">Keto Meal Plan</a></li>
-      <li><a href="#">Atheletic Meal Plan</a></li>
-      <li><a href="#">Maintenance Meal Plan</a></li>
+      <li><a href="./mealtml/meal_plans.html" class="meal1">Weight Loss Meal Plan</a></li>
+      <li><a href="./mealtml/keto.html" class="meal2">Keto Meal Plan</a></li>
+      <li><a href="./mealtml/athletic.html" class="meal2">Atheletic Meal Plan</a></li>
+      <li><a href="./mealtml/maintenance.html" class="meal3">Maintenance Meal Plan</a></li>
     </ul>
+  
+  <div class="card-1">
+    <div class="card1">
+      <img src="./assets/meal3.jpg" alt="">
+    </div>
+    <div class="card2">
+      <h2>Weight Loss Meal Plan</h2>
+      <h5 style="color: olivedrab;">1200-1400 kcal</h5>
+      <p>
+        If your aim is to lose weight in a gradual, healthy manner then this diet would meet your requirements. 
+        The meals are well balanced and consist of complex carbohydrates, lean protein
+      </p>
+      <a href="./mealtml/meal_plans.html"><button class="read">Learn more</button></a>
+    </div>
   </div>
+</div>
 </div>
 <div class="section5">
   
   <h1>Still Not Convinced ???</h1>
   <button class="week">Try One-Week Plan</button>
-
+  <div class="pop-image">
+    
+    <span>&times;</span>
+    <img src="./assets/one_week.png" alt="">
+  </div>
 </div>
 <div class="section6">
+  
   <h1>Try Some Exercises!</h1>
   <button class="week1">Watch our video</button>
+  
   <button class="week1">Watch our video</button>
+  
   <button class="week1">Watch our video</button>
+
+<div class="trailer">
+  <video src="./assets/screen-capture.webm" controls="true"></video>
+  <span class="close">&times;</span>
 </div>
+ 
+</div>
+
 <div class="section7">
   <h1>User Diaries</h1>
   
@@ -210,10 +243,10 @@
             <li><a href="#"><ion-icon name="logo-linkedin"></ion-icon></a></li>
         </ul>
         <ul class="menu">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Team</a></li>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./assets/about-us/about-us.html">About</a></li>
+            <li><a href="./signin.html">Register</a></li>
+            <li><a href="./assets/about-us/team.member.html">Team</a></li>
             <li><a href="#">Contact us</a></li>
         </ul>
         <p>
@@ -222,6 +255,35 @@
     </footer>
 </div>
 </div>
+    <script type="text/javascript">
+      const button = document.querySelector(".week1");
+      const close = document.querySelector(".close");
+      const trailer = document.querySelector(".trailer");
+      const video = document.querySelector("video");
+
+      button.addEventListener('click', ()=>{
+        trailer.style.visibility = "visible";
+        trailer.style.opacity = 1;
+      });
+      close.addEventListener('click', ()=>{
+        trailer.style.visibility = "hidden";
+        trailer.style.opacity = 0;
+
+        video.pause();
+        video.currentTime = 0;
+      });
+
+      document.querySelectorAll('.section5 button').forEach(button => {
+      button.onclick = () => {
+        document.querySelector('.pop-image').style.display = 'block';
+      }
+    });
+    document.querySelector('.pop-image span').onclick = () => {
+      document.querySelector('.pop-image').style.display = 'none';
+    }
+
+
+    </script>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>

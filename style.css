@@ -1152,12 +1152,17 @@ nav{
     max-width: 900px;
     outline: none;
 }
-.trailer .close
+.trailer span
 {
     position: absolute;
     right: 30px;
     top: 30px;
     cursor: pointer;
+    font-size: 60px;
+    font-weight: bolder;
+    color: white;
+    cursor: pointer;
+    z-index: 100;
     
 }
 

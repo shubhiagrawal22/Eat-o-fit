@@ -938,7 +938,7 @@ nav{
 .container1
 {
     display: flex;
-    min-height: 90vh;
+    min-height: 50vh;
     justify-content: flex-end;
     align-items: flex-end;
     

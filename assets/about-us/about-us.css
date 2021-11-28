@@ -27,6 +27,138 @@ body{
 
     
 }
+
+
+/* navbar */
+
+nav{
+  display: flex;
+  height: 80px;
+  width: 100%;
+  background: #3586ff;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 50px 0 100px;
+  flex-wrap: wrap;
+}
+nav h1
+{
+  color: white;
+  font-family:'Pacifico', cursive;
+}
+nav img
+{
+  cursor: pointer;
+  height: 70px;
+  width: 70px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+nav .logo{
+  color: #fff;
+  font-size: 35px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+}
+nav ul{
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  align-items: center;
+}
+nav ul li{
+  margin: 0 5px;
+}
+nav ul li a{
+  color: #f2f2f2;
+  text-decoration: none;
+  font-family: 'montserrat';
+  font-size: 18px;
+  font-weight: 600;
+  
+  
+  padding: 8px 15px;
+  border-radius: 5px;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+}
+nav ul li a.active,
+nav ul li a:hover{
+  color: #111;
+  background: #9ac1fc;
+  text-decoration: none;
+}
+nav .menu-btn i{
+  color: #fff;
+  font-size: 22px;
+  cursor: pointer;
+  display: none;
+}
+input[type="checkbox"]{
+  display: none;
+}
+@media (max-width: 1000px){
+  nav{
+    padding: 0 40px 0 50px;
+  }
+}
+@media (max-width: 920px) {
+  nav .menu-btn i{
+    display: block;
+  }
+  #click:checked ~ .menu-btn i:before{
+    content: "\f00d";
+  }
+  nav ul{
+    position: fixed;
+    top: 80px;
+    z-index: 100;
+    left: -100%;
+    background: #3586ff;
+    height: 100vh;
+    width: 100%;
+    text-align: center;
+    display: block;
+    transition: all 0.3s ease;
+  }
+  #click:checked ~ ul{
+    left: 0;
+  }
+  nav ul li{
+    width: 100%;
+    margin: 40px 0;
+  }
+  nav ul li a{
+    width: 100%;
+    margin-left: -100%;
+    display: block;
+    font-size: 20px;
+    transition: 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  #click:checked ~ ul li a{
+    margin-left: 0px;
+  }
+  nav ul li a.active,
+  nav ul li a:hover{
+    background: none;
+    color: navy;
+  }
+}
+
+
+
+@media only screen and (max-width:450px){
+  nav img
+  {
+      display: none;
+  }
+  nav h1
+  {
+      font-size: 24px;
+  }
+}
+
  /* p{
     font-size: 30px;
 }  */
@@ -285,6 +417,7 @@ textarea:valid+label {
 }
 
 
+
 /* end of feedback form */
 
 .container1
@@ -422,9 +555,22 @@ footer .wave#wave4
   .templates .head h1{
     text-align: center;
     margin-top: 40px;
-    color: white;
+    color:black;
     text-transform: uppercase;
-    font-size: 40px;
+    font-size: 80px;
+
+    
+  }
+
+  @media only  screen and (max-width:435px){
+    .templates .head h1
+    {
+      font-size: 50px ;
+      color: black;
+    }
+    
+
+    
   }
   .boxes{
     width: 100%;
@@ -577,6 +723,7 @@ footer .wave#wave4
   
   @media (max-width:576px){
     #slider{width:100%;
+      /* height: 100%; */
     
     }
     
@@ -588,5 +735,46 @@ footer .wave#wave4
       display:none;
     }
   }
+
+  
+ .feed h1{
+    font-size: 10px;
+    color:black;
+    font-size: 80px;
+    text-align: center;
+ }
+
+
+    @media (max-width:435px) {
+      .feed h1{
+        font-size: 50px;
+        
+      }
+      
+    }
+
+    .container h1{
+   
+      color: navy;
+      text-align: center;
+      text-decoration: pink;
+      font-size: 80px;
+    }
+
+    /* @media (max-width:435px) {
+      .container h1 {
+        font-size: 10px;
+        
+      }
+      
+    } */
+
+
+  
+  /* .feed h1{
+    font-size: 10px;
+
+  } */
+}
 
 

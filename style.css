@@ -173,6 +173,7 @@ nav{
     nav ul{
       position: fixed;
       top: 80px;
+      z-index: 100;
       left: -100%;
       background: #3586ff;
       height: 100vh;

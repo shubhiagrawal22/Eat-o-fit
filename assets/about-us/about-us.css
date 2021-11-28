@@ -538,11 +538,12 @@ footer .wave#wave4
     font-size:1.5em;
     padding:15px 10px;
     border-radius:5px;
+    background:white;
     
   }
   
   .controls:hover{
-    background:black;
+    background:white;
     transition:0.3s;
   }
   

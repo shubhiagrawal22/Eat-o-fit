@@ -201,7 +201,11 @@
   
   <h1>Still Not Convinced ???</h1>
   <button class="week">Try One-Week Plan</button>
-
+  <div class="pop-image">
+    
+    <span>&times;</span>
+    <img src="./assets/one_week.png" alt="">
+  </div>
 </div>
 <div class="section6">
   
@@ -269,7 +273,15 @@
         video.currentTime = 0;
       });
 
-      
+      document.querySelectorAll('.section5 button').forEach(button => {
+      button.onclick = () => {
+        document.querySelector('.pop-image').style.display = 'block';
+      }
+    });
+    document.querySelector('.pop-image span').onclick = () => {
+      document.querySelector('.pop-image').style.display = 'none';
+    }
+
 
     </script>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>

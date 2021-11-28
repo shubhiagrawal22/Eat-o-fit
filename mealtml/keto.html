@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Keto Meal Plan- Eat-o-Fit</title>
+  <!-- bs4 -->
+  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script> -->
+
+  <link rel="stylesheet" href="../meallcss/keto.css">
+  <link rel="stylesheet" href="../style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+  <!-- <link rel="stylesheet" href="./.css"> -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+</head>
+
+<body>
+  <!-- <div class="header">
+      <header>
+        <img class="logo" src="./assets/eat.png" alt="logo">
+        <nav>
+            <ul class="nav">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Meal plans</a></li>
+                <li><a href="#">About</a></li>
+            </ul>
+        </nav>
+        <a class="cta" href="#"><button>Contact us</button></a>
+    
+</header>
+    </div> -->
+  <!-- <div class="container"> -->
+  <nav>
+    <div class="logo">
+      <img src="../assets/Eat-o-Fit-logo.jpeg" alt="">
+      <h1>Eat-o-fit</h1>
+    </div>
+    <input type="checkbox" id="click">
+    <label for="click" class="menu-btn">
+      <i class="fa fa-bars"></i>
+    </label>
+
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Services</a></li>
+      <li><a href="#">Meal Plans</a></li>
+      <li><a href="#">Contact Us</a></li>
+    </ul>
+  </nav>
+  <div class="main">
+    <div class="site-title">
+
+      <h1>Keto Meal Plan</h1>
+
+    </div>
+    <div class="overlay"></div>
+
+
+    <div class="menu-box">
+      <div class="text-box">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit, eius fugit? Obcaecati
+          quaerat sed inventore quod aliquid minima veniam veritatis distinctio tenetur provident animi
+          commodi natus culpa, iure libero voluptatum consectetur non officia dolorum deleniti ratione!
+          Architecto corrupti quidem fuga, earum dicta cumque consequuntur dolor. Dicta illo cum doloremque
+          quo.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, in minus. Quasi, cupiditate et! Nihil
+          blanditiis culpa delectus eaque unde.</p>
+        
+        <button><b>View Menu</b></button>
+      </div>
+
+      <div class="img-box">
+        <p>Lorem ipsum dolor sit amet.</p>
+        <div class="slideshow-container">
+
+          <div class="mySlides fade">
+            <!-- <div class="numbertext">1 / 3</div> -->
+            <img src="../assets/keto1.jpg" style="width:100%">
+            <!-- <div class="text">Caption Text</div> -->
+          </div>
+
+          <div class="mySlides fade">
+            <!-- <div class="numbertext">2 / 3</div> -->
+            <img src="../assets/keto4.jpg" style="width:100%">
+            <!-- <div class="text">Caption Two</div> -->
+          </div>
+
+          <div class="mySlides fade">
+            <!-- <div class="numbertext">3 / 3</div> -->
+            <img src="../assets/keto3.jpg" style="width:100%">
+            <!-- <div class="text">Caption Three</div> -->
+          </div>
+
+        </div>
+        <br>
+
+        <div style="text-align:center">
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+        </div>
+
+        <script>
+          var slideIndex = 0;
+          showSlides();
+
+          function showSlides() {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            for (i = 0; i < slides.length; i++) {
+              slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) { slideIndex = 1 }
+            for (i = 0; i < dots.length; i++) {
+              dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+            setTimeout(showSlides, 2000); // Change image every 2 seconds
+          }
+        </script>
+
+        <!-- <img src="../mealimage/balanced_meal.jpg" alt=""> -->
+      </div>
+      <div class="pop-image">
+        <!-- <button><b>View Menu</b></button> -->
+        <span>&times;</span>
+        <img src="../assets/ketodietplan.png" alt="" style="overflow: auto;">
+      </div>
+
+
+
+
+    </div>
+
+    <div class="categories">
+
+      <h1 class="chead">How Does it work?</h1>
+      <div class="box4">
+        <div class="image">
+          <img src="../assets/circle1.png" alt="">
+          <div class="content">
+            <h2>Select your plan</h2>
+            <p>Choose the meal plan based on your prefrences</p>
+          </div>
+        </div>
+
+        <div class="image">
+          <img src="../assets/circle2.png" alt="">
+          <div class="content">
+            <h2>Select your plan</h2>
+            <p>Choose the meal plan based on your prefrences</p>
+          </div>
+        </div>
+        <div class="image">
+          <img src="../assets/circle3.png" alt="">
+          <div class="content">
+            <h2>Select your plan</h2>
+            <p>Choose the meal plan based on your prefrences</p>
+          </div>
+        </div>
+        <div class="image">
+          <img src="../assets/circle4.png" alt="">
+          <div class="content">
+            <h2>Select your plan</h2>
+            <p>Choose the meal plan based on your prefrences</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <div class="cardbox">
+      <div class="cards">
+        <div class="head">
+          <p><b>Choose your meal and get started</b></p>
+        </div>
+        <div class="card">
+          <div class="contain">
+            <h2>Women</h2>
+          </div>
+          <div class="details">
+            <ul style="list-style-type: none; display: inline-block; padding: 40px; margin: 5px;">
+              <li><i class="fa fa-check" aria-hidden="true"></i>lorem</li>
+              <li><i class="fa fa-check" aria-hidden="true"></i>ispum</li>
+              <li><i class="fa fa-check" aria-hidden="true"></i>dolor</li>
+              <li><i class="fa fa-check" aria-hidden="true"></i>sites</li>
+              <li><i class="fa fa-check" aria-hidden="true"></i>adispt</li>
+            </ul>
+          </div>
+        </div>
+
+
+        <div class="card">
+          <div class="contain">
+            <h2>Men</h2>
+          </div>
+          <div class="details">
+            <ul style="list-style-type: none; display: inline-block; padding: 40px; margin: 5px;">
+              <li><i class="fa fa-check" aria-hidden="true"></i>lorem</li>
+              <li><i class="fa fa-check" aria-hidden="true"></i>ispum</li>
+              <li><i class="fa fa-check" aria-hidden="true"></i>dolor</li>
+              <li><i class="fa fa-check" aria-hidden="true"></i>sites</li>
+              <li><i class="fa fa-check" aria-hidden="true"></i>adispt</li>
+            </ul>
+          </div>
+        </div>
+
+
+        <div class="card">
+          <div class="contain">
+            <h2>Children</h2>
+          </div>
+          <div class="details">
+            <ul style="list-style-type: none; display: inline-block; padding: 40px; margin: 5px;">
+              <li><i class="fa fa-check" aria-hidden="true"></i>lorem</li>
+              <li><i class="fa fa-check" aria-hidden="true"></i>ispum</li>
+              <li><i class="fa fa-check" aria-hidden="true"></i>dolor</li>
+              <li><i class="fa fa-check" aria-hidden="true"></i>sites</li>
+              <li><i class="fa fa-check" aria-hidden="true"></i>adispt</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="box6">
+        <h1>Keto Gallery</h1>
+        <div class="image-container">
+            <div class="images"><img src="../assets/keto12.jpg" alt=""></div>
+            <div class="images"><img src="../assets/keto10.jpg" alt=""></div>
+            <div class="images"><img src="../assets/keto4.jpg" alt=""></div>
+            <div class="images"><img src="../assets/keto8.jpg" alt=""></div>
+            <div class="images"><img src="../assets/keto9.jpg" alt=""></div>
+            <div class="images"><img src="../assets/keto1.jpg" alt=""></div>
+        </div>
+        <div class="popup-image">
+            <span>&times;</span>
+            <img src="../assets/keto12.jpg" alt="">
+        </div>
+    
+    </div>
+    <!-- </div> -->
+    <div class="container1">
+      <footer>
+        <div class="waves">
+          <div class="wave" id="wave1"></div>
+          <div class="wave" id="wave2"></div>
+          <div class="wave" id="wave3"></div>
+          <div class="wave" id="wave4"></div>
+        </div>
+        <ul class="social-icons">
+          <li><a href="#">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a></li>
+          <li><a href="#">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a></li>
+          <li><a href="#">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a></li>
+          <li><a href="#">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a></li>
+        </ul>
+        <ul class="menu">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Team</a></li>
+          <li><a href="#">Contact us</a></li>
+        </ul>
+        <p>
+          &copy;&nbsp; 2021 Eat-o-fit | All rights reserved
+        </p>
+      </footer>
+    </div>
+
+  </div>
+  <script>
+    document.querySelectorAll('.menu-box button').forEach(button => {
+      button.onclick = () => {
+        document.querySelector('.pop-image').style.display = 'block';
+      }
+    });
+    document.querySelector('.pop-image span').onclick = () => {
+      document.querySelector('.pop-image').style.display = 'none';
+    }
+
+  </script>
+  <script>
+      document.querySelectorAll('.image-container img').forEach(images => {
+          images.onclick = () =>{
+          document.querySelector('.popup-image').style.display = 'block';
+          document.querySelector('.popup-image img').src = images.getAttribute('src');
+          }
+      });
+
+      document.querySelector('.popup-image span').onclick = () =>{
+      document.querySelector('.popup-image').style.display = 'none';
+      }
+  </script>
+  
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
+    crossorigin="anonymous"></script>
+  <!-- </div> -->
+
+</body>
+
+</html>

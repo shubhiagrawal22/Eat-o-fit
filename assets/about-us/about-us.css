@@ -3,10 +3,13 @@
     margin: 0%;
 }
 body{
-   background: url("https://png.pngtree.com/thumb_back/fh260/back_our/20190625/ourmid/pngtree-sky-blue-ink-style-background-image_260100.jpg"); 
+   /* background: url("https://png.pngtree.com/thumb_back/fh260/back_our/20190625/ourmid/pngtree-sky-blue-ink-style-background-image_260100.jpg");  */
   /* background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQyIjhM3xWFduiGcOXyj3sh4KMoQBu2wUxCtQ&usqp=CAU"); */
    /* background:linear-gradient(to bottom,#6789b6,pink); */
-   background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQyIjhM3xWFduiGcOXyj3sh4KMoQBu2wUxCtQ&usqp=CAU");
+   /* background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQyIjhM3xWFduiGcOXyj3sh4KMoQBu2wUxCtQ&usqp=CAU"); */
+   /* background: linear-gradient(yellow); */
+   /* background:radial-gradient(yellow,orange); */
+   background-color: rgba(255, 255, 0, 0.678);
 }
 .background{
     height: 500px;
@@ -78,7 +81,12 @@ body{
     opacity: 1;
     border-radius: 10px;
     padding: 5px 5px;
+    transition: 1s;
 
+}
+.background a:hover{
+  font-size:55px ;
+  color: rgb(100, 90, 90);
 }
 @media (max-width:999px)
 {
@@ -490,3 +498,94 @@ footer .wave#wave4
     background-color: red;
     color: white;
   }
+
+
+  /* carousel */
+
+
+
+  body{
+    background:#e6e6e6;
+  }
+  #slider{
+    width:80%;
+    margin:0 auto;
+    position:relative;
+    overflow:hidden;
+    box-shadow:2px 5px 10px rgba(0,0,0,0.4);;
+  }
+  
+  .slide{
+    width:100%;
+    
+    display:none;
+    animation-name:fade;
+    animation-duration:1s;
+    
+  }
+  img{
+   width:100%; 
+  }
+  @keyframes fade{
+    from{opacity:0.5;}
+    to{opacity:1;}
+  }
+  
+  .controls{
+    position:absolute;
+    top:50%;
+    transform:translateY(-50%);
+    font-size:1.5em;
+    padding:15px 10px;
+    border-radius:5px;
+    
+  }
+  
+  .controls:hover{
+    background:black;
+    transition:0.3s;
+  }
+  
+  .controls:active{
+    color:grey;
+  }
+  
+  #left-arrow{
+    left:10px;
+  }
+  
+  #right-arrow{
+    right:10px;
+  }
+  
+  #dots-con{
+    
+    text-align:center;
+  }
+  .dot{
+    display:inline-block;
+    background:grey;
+    padding:8px;
+    border-radius:50%;
+    margin:10px 5px;
+  }
+  
+  .active{
+    background:crimson;
+  }
+  
+  @media (max-width:576px){
+    #slider{width:100%;
+    
+    }
+    
+    .controls{
+      font-size:1em;
+    }
+    
+    #dots-con{
+      display:none;
+    }
+  }
+
+

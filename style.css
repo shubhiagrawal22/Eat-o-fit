@@ -266,7 +266,7 @@ nav{
     background-color: #3586ff;
     color: white;
     padding: 1.5rem 2em;
-    font-style: 1rem;
+    font-size: 1rem;
     margin-right: 15px;
     border-radius: 38px;
     font-size: 18px;
@@ -291,7 +291,30 @@ nav{
     background-color: #3586ff;
     color: white;
 }
-
+@media (max-width:960px) {
+    .carousel-caption h5 
+    {
+        font-size: 60px;
+        bottom: 150px;
+    }
+    .slider-btn .btn
+{
+    background-color: #3586ff;
+    color: white;
+    padding: 1rem 1.5em;
+    font-size: 0.5rem;
+    margin-right: 15px;
+    border-radius: 38px;
+    font-size: 15px;
+    transition: all 0.3s ease 0s;
+    font-family: 'Montserrat';
+    font-weight: 700;
+}
+.carousel-item
+{
+    height: 80vh;
+}
+}
 
 .section1
 {
@@ -1258,6 +1281,29 @@ nav{
     height: 100px;
     border-radius: 50%;
 }
+.testcard img:hover
+{
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-name: coin;
+}
+@keyframes coin{
+    0%{
+      z-index: 10;
+      transform: rotateY(0deg);
+    }
+    
+    50%{
+      z-index: 5;
+      transform: rotateY(180deg);
+    }
+    
+    100%{
+      z-index: 10;
+      transform: rotateY(360deg);
+  
+    }
+  }
 .name
 {
     font-size: 20px;

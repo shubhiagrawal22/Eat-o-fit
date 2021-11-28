@@ -173,6 +173,7 @@ nav{
     nav ul{
       position: fixed;
       top: 80px;
+      z-index: 100;
       left: -100%;
       background: #3586ff;
       height: 100vh;
@@ -265,7 +266,7 @@ nav{
     background-color: #3586ff;
     color: white;
     padding: 1.5rem 2em;
-    font-style: 1rem;
+    font-size: 1rem;
     margin-right: 15px;
     border-radius: 38px;
     font-size: 18px;
@@ -290,7 +291,30 @@ nav{
     background-color: #3586ff;
     color: white;
 }
-
+@media (max-width:960px) {
+    .carousel-caption h5 
+    {
+        font-size: 60px;
+        bottom: 150px;
+    }
+    .slider-btn .btn
+{
+    background-color: #3586ff;
+    color: white;
+    padding: 1rem 1.5em;
+    font-size: 0.5rem;
+    margin-right: 15px;
+    border-radius: 38px;
+    font-size: 15px;
+    transition: all 0.3s ease 0s;
+    font-family: 'Montserrat';
+    font-weight: 700;
+}
+.carousel-item
+{
+    height: 80vh;
+}
+}
 
 .section1
 {
@@ -1212,11 +1236,108 @@ nav{
 }
 .section7 h1
 {
-    padding: 20px;
+    padding: 15px;
     font-weight: 700;
+    border-bottom: 5px solid olivedrab;
 }
+.section7 h4
+{
+    font-family: 'Shadows Into Light', cursive;
+    font-weight: 600;
+    color: olivedrab;
+    margin-top: 20px;
+}
+.testcards
+{
+    padding: 40px 0px;
+    width: 90%;
+    color: #434343;
+    text-align: center;
+    max-width: 1400px;
+    margin: auto;
+    overflow: hidden;
+}
+.row
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.col 
+{
+    flex: 33.33%;
+    max-width: 33.33%;
+    box-sizing: border-box;
+    padding: 15px;
+}
+.testcard
+{
+    background: cornsilk;
+    padding: 30px;
+}
+.testcard img
+{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+.testcard img:hover
+{
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-name: coin;
+}
+@keyframes coin{
+    0%{
+      z-index: 10;
+      transform: rotateY(0deg);
+    }
+    
+    50%{
+      z-index: 5;
+      transform: rotateY(180deg);
+    }
+    
+    100%{
+      z-index: 10;
+      transform: rotateY(360deg);
   
-
+    }
+  }
+.name
+{
+    font-size: 20px;
+    text-transform: uppercase;
+    font-family: 'montserrat';
+    margin: 20px 0;
+}
+.stars 
+{
+    color: #6ab04c;
+    margin-bottom: 20px;
+}
+@media  screen and (max-width:960px) {
+    .section7
+    {
+        height: 250vh;
+    }
+    .col
+    {
+        flex: 100%;
+        max-width: 80%;
+    }  
+}
+@media  screen and (max-width:600px) {
+    .section7
+    {
+        height: 300vh;
+    }
+    .col
+    {
+        flex: 100%;
+        max-width: 100%;
+    }  
+}
 .container1
 {
     display: flex;

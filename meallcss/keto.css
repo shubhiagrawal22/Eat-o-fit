@@ -282,6 +282,7 @@ width: 400px;}
     height: 100%;
     width: 100%;
     z-index: 100;
+    display: none;
 }
 .box6 .popup-image span{
     position: absolute;

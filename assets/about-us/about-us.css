@@ -9,7 +9,7 @@ body{
    /* background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQyIjhM3xWFduiGcOXyj3sh4KMoQBu2wUxCtQ&usqp=CAU"); */
    /* background: linear-gradient(yellow); */
    /* background:radial-gradient(yellow,orange); */
-   background-color: rgba(255, 255, 0, 0.678);
+   background-color: rgba(255, 255, 0, 0.678); 
 }
 .background{
     height: 500px;
@@ -255,11 +255,11 @@ textarea:valid+label {
 }
 
 .submit-btn:hover {
-  transform: scale(1.1, 1.1);
+  transform: scale(1.2, 1.2);
 }
 
 .submit-btn:active {
-  transform: scale(1.1, 1.1);
+  transform: scale(1.2, 1.2);
   filter: sepia(0.5);
 }
 

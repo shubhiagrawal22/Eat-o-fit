@@ -2,7 +2,15 @@
 @import 'https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css';
 @import 'https://fonts.googleapis.com/css?family=Raleway:100,600';
 @import 'https://fonts.googleapis.com/css?family=Open+Sans:300';
- .section-title h2 {
+ 
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins' ,san-serif;
+}
+
+.section-title h2 {
   text-transform: uppercase;
 }
 body{
@@ -14,6 +22,7 @@ body{
 .section-title p {
   text-transform: uppercase;
   font-weight:bold;
+  font-family: 'montserrat';
 }
 .single-team{
   padding-bottom: 70px;
@@ -62,6 +71,7 @@ body{
   text-transform: uppercase;
   color: #fff;
   font-size: 16px;
+  font-family: 'montserrat';
   margin: 5px;
 }
 .single-team:hover .team-info h3{
@@ -70,6 +80,7 @@ body{
 .team-info p {
   margin-top: 15px;
   color: #fff;
+  font-family: 'montserrat';
 }
 .single-team-text p{
   margin-top: 5px;
@@ -78,7 +89,6 @@ body{
   color: #fff;
   padding: 0 10px 5px;
 }
-
 
 
 

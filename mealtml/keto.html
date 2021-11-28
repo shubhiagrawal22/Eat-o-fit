@@ -13,6 +13,7 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script> -->
 
   <link rel="stylesheet" href="../meallcss/keto.css">
+  <!-- <link rel="stylesheet" href="../meallcss/header.css"> -->
   <link rel="stylesheet" href="../style.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
     crossorigin="anonymous">
@@ -41,23 +42,38 @@
 </header>
     </div> -->
   <!-- <div class="container"> -->
-  <nav>
-    <div class="logo">
-      <img src="../assets/Eat-o-Fit-logo.jpeg" alt="">
-      <h1>Eat-o-fit</h1>
-    </div>
-    <input type="checkbox" id="click">
-    <label for="click" class="menu-btn">
-      <i class="fa fa-bars"></i>
-    </label>
-
+    <nav>
+      <div class="logo">
+        <img src="../assets/Eat-o-Fit-logo.jpeg" alt="">
+         <h1>Eat-o-fit</h1>
+      </div>
+      <input type="checkbox" id="click">
+      <label for="click" class="menu-btn">
+      <i class="fas fa-bars"></i>
+      </label>
+      <ul>
+         <li><a href="./index.html">Home</a></li>
+         <li><a href="./assets/about-us/about-us.html">About</a></li>
+         <li><a href="./assets/about-us/team.member.html">Our Team</a></li>
+         <li><a href="#meals">Meal Plans</a></li>
+        
+         <li><a href="./signin.html">Register</a></li>
+         <li><a href="./signin.html">Contact Us</a></li>
+      </ul>
+    </nav>
+  <!-- <nav>
+    <input type="checkbox" id="check">
+    <label for="check" class="checkbtn">
+    <i class="fa fa-bars"></i>
+  </label>
+    <label class="logo">Eat-o-Fit</label>
     <ul>
-      <li><a href="#">Home</a></li>
+      <li><a class="active" href="#">Home</a></li>
       <li><a href="#">About</a></li>
-      <li><a href="#">Services</a></li>
       <li><a href="#">Meal Plans</a></li>
-      <li><a href="#">Contact Us</a></li>
-    </ul>
+      <li><a href="#">Contact</a></li>
+      <li><a href="#">FeedBack</a></li>
+    </ul> -->
   </nav>
   <div class="main">
     <div class="site-title">
@@ -250,7 +266,6 @@
             <span>&times;</span>
             <img src="../assets/keto12.jpg" alt="">
         </div>
-    
     </div>
     <!-- </div> -->
     <div class="container1">
@@ -308,9 +323,9 @@
           }
       });
 
-      document.querySelector('.popup-image span').onclick = () =>{
+      document.querySelector('.popup-image span').onclick = () => {
       document.querySelector('.popup-image').style.display = 'none';
-      }
+      };
   </script>
   
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>

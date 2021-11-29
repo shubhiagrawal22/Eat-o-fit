@@ -11,8 +11,15 @@ body{
   display: flex;
   align-items: center;
   justify-content: center;
-  background:url("https://wallpaperaccess.com/full/2095705.jpg");
+  /* background:url("https://wallpaperaccess.com/full/2095705.jpg"); */
+  /* background: url("https://wallpapershome.com/images/wallpapers/yoga-3840x2160-beach-sea-blue-sky-10413.jpg"); */
+  /* background: url("https://images.pexels.com/photos/281260/pexels-photo-281260.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"); */
+
+
+  background-color: rgba(0,0,0,0.4);
+  opacity: 0.9;
   padding: 30px;
+  z-index: 2;
 }
 .container{
   position: relative;

@@ -3,12 +3,7 @@
   margin: 0%;
 }
 body{
- /* background: url("https://png.pngtree.com/thumb_back/fh260/back_our/20190625/ourmid/pngtree-sky-blue-ink-style-background-image_260100.jpg");  */
-/* background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQyIjhM3xWFduiGcOXyj3sh4KMoQBu2wUxCtQ&usqp=CAU"); */
- /* background:linear-gradient(to bottom,#6789b6,pink); */
- /* background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQyIjhM3xWFduiGcOXyj3sh4KMoQBu2wUxCtQ&usqp=CAU"); */
- /* background: linear-gradient(yellow); */
- /* background:radial-gradient(yellow,orange); */
+ 
  background-color: rgba(255, 255, 0, 0.678); 
 }
 .background{
@@ -215,6 +210,11 @@ padding: 8% 5% 10% 5%;
   padding: 5px 5px;
   transition: 1s;
 
+}
+#con
+{
+  font-family: 'Poppins' ,san-serif;
+  padding: 10px;
 }
 .background a:hover{
 font-size:55px ;

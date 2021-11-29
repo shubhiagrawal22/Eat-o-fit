@@ -1,259 +1,236 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>About us - Eat-O-Fit</title>
-  <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
-  <link rel="stylesheet" href="./about-us.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
-  <link rel="stylesheet" href="./chat.css">
-  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> -->
-
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="./about-us.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+      <link rel="stylesheet" href="./chat.css">
+      
 </head>
-
 <body>
-  <div class="container">
-    <div class="main">
-      <div class="site-title">
-
-        <h1>About Our website</h1>
-
-      </div>
-      <div class="overlay"></div>
+  <nav>
+    <div class="logo">
+      <img src="../Eat-o-Fit-logo.jpeg" alt="">
+       <h1>Eat-o-fit</h1>
     </div>
+    <input type="checkbox" id="click">
+    <label for="click" class="menu-btn">
+    <i class="fas fa-bars"></i>
+    </label>
+    <ul>
+       <li><a href="./index.html">Home</a></li>
+       <li><a href="./assets/about-us/about-us.html">About</a></li>
+       <li><a href="./assets/about-us/team.member.html">Our Team</a></li>
+       <li><a href="#meals">Meal Plans</a></li>
+      
+       <li><a href="./signin.html">Register</a></li>
+       <li><a href="./signin.html">Contact Us</a></li>
+    </ul>
+  </nav>
 
 
+
+    <div class="container">
+        <h1 id="con">
+          𝔸𝕓𝕠𝕦𝕥 𝕆𝕦𝕣 𝕎𝕖𝕓𝕤𝕚𝕥𝕖 
+        </h1>
+        
+        
+    
     <!-- <div class="background">
         <a href="./team.member.html" target="_blank">𝓣𝓮𝓪𝓶 𝓜𝓮𝓶𝓫𝓮𝓻𝓼</a>
     </div> -->
 
 
 
-    <div class="slideshow-container">
+    <!-- slider -->
 
-      <!-- Full-width images with number and caption text -->
-      <div class="mySlides fade">
 
-        <img src="../imag5.jpg" style="width:100%;">
-        <div class="text" style="font-size: 40px;"></div>
+    <div id="slider">  
+      <div class="slide" style="background:dodgerBlue; border: 2px solid blue;">
+        <img src="https://previews.123rf.com/images/serg_v/serg_v1610/serg_v161000016/63821771-large-collection-of-fruits-and-vegetables-on-a-blue-sky-background-healthy-food-copy-space-for-your-.jpg" height="350px" width="617px">
       </div>
-
-      <div class="mySlides fade">
-
-        <img src="../img2.jpg" style="width:100% ; ">
-        <div class="text">Caption Two</div>
+      
+      <div class="slide" style="background:coral; border: 2px solid blue">
+         <img src="https://images.pexels.com/photos/1092730/pexels-photo-1092730.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" height="350px" width="617px" >
       </div>
-
-      <div class="mySlides fade">
-
-        <img src="../img3.jpg" style="width:100% ;">
-        <div class="text">Caption Three</div>
+     
+      <div class="slide" style="background:crimson; border: 2px solid blue">
+        <img src="https://static.toiimg.com/thumb/81551320.cms?width=680&height=512&imgsize=967762" height="350px" width="617px">
       </div>
-
-      <!-- Next and previous buttons -->
-      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      
+      <div class="slide" style="background: #6edf10; border: 2px solid blue">
+        <img src="https://image.shutterstock.com/image-photo/healthy-food-selection-on-gray-260nw-1664037628.jpg" height="350px" width="617px" >
+      </div>
+      
+      <!--Controlling arrows-->
+      <span class="controls" onclick="prevSlide(-1)" id="left-arrow"><i class="fa fa-arrow-left" aria-hidden="true"></i>
+    </span>
+      <span class="controls" id="right-arrow" onclick="nextSlide(1)"><i class="fa fa-arrow-right" aria-hidden="true"></i>
+    </span>
     </div>
-    <br>
+      <div id="dots-con">
+     <span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span>
+     </div>
 
-    <!-- The dots/circles -->
-    <div style="text-align:center">
-      <span class="dot" onclick="currentSlide(1)"></span>
-      <span class="dot" onclick="currentSlide(2)"></span>
-      <span class="dot" onclick="currentSlide(3)"></span>
-    </div>
-   
+     <script src="./res.js"></script>
+
+     <!-- end of slider -->
+
+
+
+
     <div class="templates">
       <div class="head">
-        <div class="container">
-          <div class="main">
-            <div class="site-title">
-      
-              <h1>Services</h1>
-      
-            </div>
-            <div class="overlay"></div>
-          </div>
+         <h1>𝓢𝓮𝓻𝓿𝓲𝓬𝓮𝓼</h1>
       </div>
       <div class="boxes">
-        <div class="box" id="box-1">
-          <img src="../imag1.jpg" alt="" srcset="">
-          <div class="box-in" id="box-in-1">
+      <div class="box" id="box-1">
+         <img src="./pic2.jpg" alt="" srcset="">
+         <div class="box-in" id="box-in-1">
             <h2>Healthy Eating</h2>
-            <p>With a suite of resources at their fingertips, like on-site surgeons and a blood bank, our emergency
-              teams are ready for even the most critical of cases.</p>
+            <p>With a suite of resources at their fingertips, like on-site surgeons and a blood bank, our emergency teams are ready for even the most critical of cases.</p>
 
-          </div>
-        </div>
-        <div class="box" id="box-2">
-          <img src="./pic3.jpg" alt="" srcset="">
-          <div class="box-in" id="box-in-2">
-            <h2>Exercise</h2>
-            <p>Our comprehensive approach of criticalists partnering with emergency teams, other specialists and local
-              veterinarians offers the best chance of recovery to our patients.</p>
-
-          </div>
-        </div>
-        <div class="box" id="box-3">
-          <img src="./pic7.png" alt="" srcset="">
-          <div class="box-in" id="box-in-3">
-            <h2>Specialty Services</h2>
-            <p>When animals need focused treatments, like surgery, internal medicine, radiology and cardiology, our
-              board-certified specialists give them the best chance at better health.</p>
-
-          </div>
-        </div>
+         </div>
       </div>
-      <h1 style="color:black;font-size: 80px;text-align: center;">𝓕𝓮𝓮𝓭𝓑𝓪𝓬𝓴</h1>
+      <div class="box" id="box-2">
+         <img src="./pic3.jpg" alt="" srcset="">
+         <div class="box-in" id="box-in-2">
+            <h2>Exercise</h2>
+            <p>Our comprehensive approach of criticalists partnering with emergency teams, other specialists and local veterinarians offers the best chance of recovery to our patients.</p>
 
-      <section id="contact">
-        <div class="contact-box">
-          <div class="contact-links">
-            <h2>Feedback</h2>
-            <div class="links">
-              <div class="link">
-                <a><img src="https://i.postimg.cc/m2mg2Hjm/linkedin.png" alt="linkedin"></a>
+         </div>
+      </div>
+      <div class="box" id="box-3">
+         <img src="./pic7.png" alt="" srcset="">
+         <div class="box-in" id="box-in-3">
+            <h2>Specialty Services</h2>
+            <p>When animals need focused treatments, like surgery, internal medicine, radiology and cardiology, our board-certified specialists give them the best chance at better health.</p>
+
+         </div>
+      </div>
+      </div>
+      </div>
+      </div>
+    </div>
+      
+      
+    
+    
+    
+      <div class="feed">
+          <h1 class="fid">𝓕𝓮𝓮𝓭𝓑𝓪𝓬𝓴</h1>
+    
+
+        <section id="contact">
+            <div class="contact-box">
+              <div class="contact-links">
+                <h2>Feedback</h2>
+                <div class="links">
+                  <div class="link">
+                    <a><img src="https://i.postimg.cc/m2mg2Hjm/linkedin.png" alt="linkedin"></a>
+                  </div>
+                  <div class="link">
+                    <a><img src="https://i.postimg.cc/YCV2QBJg/github.png" alt="github"></a>
+                  </div>
+                  <div class="link">
+                    <a><img src="https://i.postimg.cc/W4Znvrry/codepen.png" alt="codepen"></a>
+                  </div>
+                  <div class="link">
+                    <a><img src="https://i.postimg.cc/NjLfyjPB/email.png" alt="email"></a>
+                  </div>
+                </div>
               </div>
-              <div class="link">
-                <a><img src="https://i.postimg.cc/YCV2QBJg/github.png" alt="github"></a>
-              </div>
-              <div class="link">
-                <a><img src="https://i.postimg.cc/W4Znvrry/codepen.png" alt="codepen"></a>
-              </div>
-              <div class="link">
-                <a><img src="https://i.postimg.cc/NjLfyjPB/email.png" alt="email"></a>
+              <div class="contact-form-wrapper">
+                <form>
+                  <div class="form-item">
+                    <input type="text" name="sender" required="">
+                    <label>Name:</label>
+                  </div>
+                  <div class="form-item">
+                    <input type="text" name="email" required="">
+                    <label>Email:</label>
+                  </div>
+                  <div class="form-item">
+                    <textarea class="" name="message" required=""></textarea>
+                    <label>Give suggestions:</label>
+                  </div>
+                  <button class="submit-btn">Send</button>  
+                </form>
               </div>
             </div>
+          </section>
           </div>
-          <div class="contact-form-wrapper">
-            <form>
-              <div class="form-item">
-                <input type="text" name="sender" required="">
-                <label>Name:</label>
-              </div>
-              <div class="form-item">
-                <input type="text" name="email" required="">
-                <label>Email:</label>
-              </div>
-              <div class="form-item">
-                <textarea class="" name="message" required=""></textarea>
-                <label>Give suggestions:</label>
-              </div>
-              <button class="submit-btn">Send</button>
-            </form>
-          </div>
+
+
+          
+
+          <div class="container1">
+            <footer>
+                <div class="waves">
+                    <div class="wave" id="wave1"></div>
+                    <div class="wave" id="wave2"></div>
+                    <div class="wave" id="wave3"></div>
+                    <div class="wave" id="wave4"></div>
+                </div>
+                <ul class="social-icons">
+                    <li><a href="#"><ion-icon name="logo-facebook"></ion-icon> </a></li>
+                    <li><a href="#"><ion-icon name="logo-instagram"></ion-icon></a></li>
+                    <li><a href="#"><ion-icon name="logo-twitter"></ion-icon></a></li>
+                    <li><a href="#"><ion-icon name="logo-linkedin"></ion-icon></a></li>
+                </ul>
+                <ul class="menu">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Team</a></li>
+                    <li><a href="#">Contact us</a></li>
+                </ul>
+                <p>
+                    &copy;&nbsp; 2021 Eat-o-fit | All rights reserved
+                </p>
+            </footer>
         </div>
-      </section>
 
-
-
-
-      <div class="container1">
-        <footer>
-          <div class="waves">
-            <div class="wave" id="wave1"></div>
-            <div class="wave" id="wave2"></div>
-            <div class="wave" id="wave3"></div>
-            <div class="wave" id="wave4"></div>
-          </div>
-          <ul class="social-icons">
-            <li><a href="#">
-                <ion-icon name="logo-facebook"></ion-icon>
-              </a></li>
-            <li><a href="#">
-                <ion-icon name="logo-instagram"></ion-icon>
-              </a></li>
-            <li><a href="#">
-                <ion-icon name="logo-twitter"></ion-icon>
-              </a></li>
-            <li><a href="#">
-                <ion-icon name="logo-linkedin"></ion-icon>
-              </a></li>
-          </ul>
-          <ul class="menu">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Team</a></li>
-            <li><a href="#">Contact us</a></li>
-          </ul>
-          <p>
-            &copy;&nbsp; 2021 Eat-o-fit | All rights reserved
-          </p>
-        </footer>
-      </div>
-
-      <script src="./about-us.js"></script>
+        <script src="./about-us.js"></script>
       <script type="text/javascript">
-        $(document).ready(function () {
-          alert("PLEASE PROVIDE YOUR VALUEABLE FEEDBACK!!");
-          $(".logo_onkar").click(function () {
-
-            $(".wrapper_onkar").toggle(100);
-          }); $("i").click(function () {
-
-            $(".wrapper_onkar").hide(100);
-          });
-        });
+         $(document).ready(function() {
+         	alert("PLEASE PROVIDE YOUR VALUEABLE FEEDBACK!!");
+         	$(".logo_onkar").click(function() {
+         
+         		$(".wrapper_onkar").toggle(100);
+         	});$("i").click(function() {
+         
+         		$(".wrapper_onkar").hide(100);
+         	});
+         });
       </script>
       <div class="wrapper_onkar">
         <i class='bx bx-right-arrow-alt'></i>
         <div class="top_onkar">
-          <p class="p_onkar">Fill out this form we will connect with you in few hours. </p>
+           <p class="p_onkar">Fill out this form we will connect with you in few hours. </p>
         </div>
         <div class="form_onkar">
-          <input type="text" placeholder="Name" class="input_onkar">
-          <input type="text" placeholder="Surname" class="input_onkar">
-          <input type="text" placeholder="Email" class="input_onkar">
-          <input type="text" placeholder="Password" class="input_onkar">
-          <input type="text" placeholder="Location" class="input_onkar">
-          <input type="text" placeholder="User ID" class="input_onkar">
-          <button class="btn_onkar">Submit</button>
+           <input type="text" placeholder="Name" class="input_onkar">
+           <input type="text" placeholder="Surname" class="input_onkar">
+           <input type="text" placeholder="Email" class="input_onkar">
+           <input type="text" placeholder="Password" class="input_onkar">
+           <input type="text" placeholder="Location" class="input_onkar">
+           <input type="text" placeholder="User ID" class="input_onkar">
+           <button class="btn_onkar">Submit</button>
         </div>
-      </div>
-      <img src="./chat (1).svg" class="logo_onkar">
+     </div>
+     <img src="./chat (1).svg" class="logo_onkar">
     </div>
-    <script>
-      var slideIndex = 1;
-      showSlides(slideIndex);
-
-      // Next/previous controls
-      function plusSlides(n) {
-        showSlides(slideIndex += n);
-      }
-
-      // Thumbnail image controls
-      function currentSlide(n) {
-        showSlides(slideIndex = n);
-      }
-
-      function showSlides(n) {
-        var i;
-        var slides = document.getElementsByClassName("mySlides");
-        var dots = document.getElementsByClassName("dot");
-        if (n > slides.length) { slideIndex = 1 }
-        if (n < 1) { slideIndex = slides.length }
-        for (i = 0; i < slides.length; i++) {
-          slides[i].style.display = "none";
-        }
-        for (i = 0; i < dots.length; i++) {
-          dots[i].className = dots[i].className.replace(" active", "");
-        }
-        slides[slideIndex - 1].style.display = "block";
-        dots[slideIndex - 1].className += " active";
-      }
-    </script>
-
-
-
+    
+      
+      
 </body>
-
 </html>

@@ -75,6 +75,12 @@
     padding: 50px;
     
 }
+.logo i
+{
+  font-size: 26px;
+  color: white;
+  margin-right: 10px;
+}
 .box4{
   padding: 20px;
 }

@@ -39,15 +39,15 @@
             <div class="input-boxes">
               <div class="input-box">
                 <i class="fas fa-envelope"></i>
-                <input type="text" placeholder="Enter your email" required>
+                <input type="text" placeholder="Enter your email" required id="name">
               </div>
               <div class="input-box">
                 <i class="fas fa-lock"></i>
-                <input type="password" placeholder="Enter your password" required>
+                <input type="password" placeholder="Enter your password" required id="roll">
               </div>
               <div class="text"><a href="#">Forgot password?</a></div>
               <div class="button input-box">
-                <input type="submit" value="Submit">
+                <input type="submit" value="Submit" id="insert">
               </div>
               <div class="text sign-up-text">Don't have an account? <label for="flip">Sigup now</label></div>
             </div>
@@ -75,6 +75,12 @@
               <div class="text sign-up-text">Already have an account? <label for="flip">Login now</label></div>
             </div>
       </form>
+
+      <script src="https://www.gstatic.com/firebasejs/8.4.2/firebase.js"></script>
+            
+                <script src="./crud.js"></script>
+            
+                <script src="./fireConfig.js"></script>
     </div>
     </div>
     </div>
